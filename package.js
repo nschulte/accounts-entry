@@ -1,8 +1,8 @@
 Package.describe({
-    summary: "Make signin and signout their own pages with routes.",
+    summary: "WITH ENROLLMENT - Make signin and signout their own pages with routes.",
     version: '1.0.3',
-    name: "joshowens:accounts-entry",
-    githubUrl: 'https://github.com/Differential/accounts-entry',
+    name: "benmgreene:accounts-entry-enroll",
+    githubUrl: 'https://github.com/benmgreene/accounts-entry/tree/enroll',
 });
 
 Package.onUse(function(api) {
@@ -91,7 +91,7 @@ Package.onTest(function (api) {
             'coffeescript'
             ]);
   api.use(['iron:router', 'softwarerero:accounts-t9n', 'joshowens:simple-form'], ['client', 'server']);
-  api.use('joshowens:accounts-entry');
+  api.use('benmgreene:accounts-entry');
 
   api.addFiles(['tests/route.coffee', 'tests/client.html', 'tests/client.coffee'], 'client');
 });
