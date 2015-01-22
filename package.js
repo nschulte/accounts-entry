@@ -2,7 +2,7 @@ Package.describe({
     summary: "WITH ENROLLMENT - Make signin and signout their own pages with routes.",
     version: '1.0.3',
     name: "benmgreene:accounts-entry-enroll",
-    githubUrl: 'https://github.com/benmgreene/accounts-entry/tree/enroll',
+    githubUrl: 'https://github.com/benmgreene/accounts-entry/tree/v1.0.3-enroll',
 });
 
 Package.onUse(function(api) {
@@ -91,7 +91,7 @@ Package.onTest(function (api) {
             'coffeescript'
             ]);
   api.use(['iron:router', 'softwarerero:accounts-t9n', 'joshowens:simple-form'], ['client', 'server']);
-  api.use('benmgreene:accounts-entry');
+  api.use('benmgreene:accounts-entry-enroll');
 
   api.addFiles(['tests/route.coffee', 'tests/client.html', 'tests/client.coffee'], 'client');
 });
