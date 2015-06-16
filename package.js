@@ -1,8 +1,8 @@
 Package.describe({
     summary: "Make signin and signout their own pages with routes.",
-    version: '1.0.3',
-    name: "joshowens:accounts-entry",
-    githubUrl: 'https://github.com/Differential/accounts-entry',
+    version: '1.0.5',
+    name: "meteorblackbelt:accounts-entry",
+    githubUrl: 'https://github.com/meteorblackbelt/accounts-entry',
 });
 
 Package.onUse(function(api) {
