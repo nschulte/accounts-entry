@@ -30,6 +30,7 @@ en =
   and: "and"
   "Match failed":  "Match failed"
   "User not found":  "User not found"
+  "Incorrect Password": "Incorrect Password"
 
   error:
     minChar: "7 character minimum password."

@@ -3,7 +3,6 @@ Router.map ->
   @route "entrySignIn",
     path: "/sign-in"
     onBeforeAction: ->
-      Session.set('entryError', undefined)
       Session.set('buttonText', 'in')
       @next()
     onRun: ->
@@ -29,6 +28,8 @@ Router.map ->
         Template[@template].events(AccountsEntry.entrySignInEvents)
         Template[@template].helpers(AccountsEntry.entrySignInHelpers)
       @next()
+    onAfterAction: ->
+      Session.set('entryError', undefined)
 
 
   @route "entrySignUp",
