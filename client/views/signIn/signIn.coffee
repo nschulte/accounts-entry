@@ -24,6 +24,8 @@ AccountsEntry.entrySignInHelpers = {
   isUsernameOnly: ->
     return AccountsEntry.settings.passwordSignupFields == 'USERNAME_ONLY'
 
+  entrySignUp: ->
+    AccountsEntry.settings.entrySignUp || Router.path('entrySignUp')
 }
 
 AccountsEntry.entrySignInEvents = {

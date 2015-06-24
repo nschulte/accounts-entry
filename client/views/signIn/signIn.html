@@ -40,7 +40,7 @@
           </form>
         {{/if}}
         {{#if showCreateAccountLink}}
-        <p class="entry-signup-cta">{{t9n "dontHaveAnAccount"}} <a href="{{pathFor 'entrySignUp'}}">{{t9n "signUp"}}</a></p>
+        <p class="entry-signup-cta">{{t9n "dontHaveAnAccount"}} <a href="{{entrySignUp}}">{{t9n "signUp"}}</a></p>
         {{/if}}
         {{#if talkingToServer}}
           {{> spinner}}
