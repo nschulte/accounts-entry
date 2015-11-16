@@ -1,7 +1,7 @@
 Package.describe({
     summary: "Make signin and signout their own pages with routes.",
     version: '1.0.7',
-    name: "nschulte:accounts-entry",
+    name: "echograde:accounts-entry",
     githubUrl: 'https://github.com/nschulte/accounts-entry',
 });
 
