@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("METEOR@1.2.0");
+  api.versionsFrom("METEOR@1.2.0.1");
 
   api.use(['iron:router@1.0.3', 'softwarerero:accounts-t9n@1.0.3', 'joshowens:simple-form@0.2.1', 'sacha:spin@2.0.4'], ['client', 'server']);
   // CLIENT
