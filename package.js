@@ -1,14 +1,14 @@
 Package.describe({
     summary: "Make signin and signout their own pages with routes.",
-    version: '1.0.6',
-    name: "meteorblackbelt:accounts-entry",
-    githubUrl: 'https://github.com/meteorblackbelt/accounts-entry',
+    version: '1.0.7',
+    name: "nschulte:accounts-entry",
+    githubUrl: 'https://github.com/nschulte/accounts-entry',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("METEOR@0.9.0");
+  api.versionsFrom("METEOR@1.2.0");
 
-  api.use(['iron:router@1.0.3', 'softwarerero:accounts-t9n@1.0.3', 'joshowens:simple-form@0.2.2', 'sacha:spin@2.0.4'], ['client', 'server']);
+  api.use(['iron:router@1.0.3', 'softwarerero:accounts-t9n@1.0.3', 'joshowens:simple-form@0.2.1', 'sacha:spin@2.0.4'], ['client', 'server']);
   // CLIENT
   api.use([
     'deps',
